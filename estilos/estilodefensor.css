@@ -1,0 +1,293 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    height: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    background-image: linear-gradient(125deg, rgb(27, 27, 27), rgb(65, 65, 65));
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: -90px;
+}
+
+#nbalogo {
+    height: 35px;
+}
+
+
+.navlist {
+    display: flex;
+
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 19px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon img {
+    height: 40px;
+}
+
+.container2 {
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    display: grid;
+    gap: 5px;
+    font-family: 'Bruno Ace', cursive;
+    grid-template-areas:
+        'header header'
+        'sidebar sidebar'
+        'footer footer'
+    ;
+    background-image: linear-gradient(135deg, #3a1d5e 0%, #a75ec3 99%);
+
+}
+
+.container2 div {
+    color: rgb(0, 0, 0);
+}
+
+#header2 {
+    grid-area: header;
+
+}
+
+#content2 {
+    grid-area: content;
+
+}
+
+#sidebar2 {
+    align-items: center;
+    padding-top: 80px;
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    grid-area: sidebar;
+    width: 100%;
+    padding-right: auto;
+
+}
+
+#footer2 {
+    height: auto;
+    grid-area: footer;
+
+}
+
+#sidebar2 img {
+    position: relative;
+    height: 500px;
+    padding-left: 27%;
+    bottom: 50px;
+
+}
+
+#sidebar2 p {
+    position: relative;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.7;
+    bottom: 5%;
+}
+
+#conteudonovo p {
+    text-align: center;
+    width: 700px;
+    font-size: larger;
+    font-family: 'Righteous', cursive;
+    padding-bottom: 100px;
+    color: white;
+    padding-top: 20px;
+
+}
+
+#conteudonovo h1 {
+    text-align: center;
+    width: 700px;
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    padding-top: 50px;
+
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(125deg, rgb(27, 27, 27), rgb(65, 65, 65));
+}
+
+#conteudonovo {
+    padding-left: 29%;
+}
+
+#footer2 p {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 14%;
+    display: none;
+
+}
+
+@media (max-width: 1400px) {
+    #sidebar2 img {
+        position: relative;
+        height: 500px;
+        padding-left: 15%;
+        bottom: 50px;
+        transition: 0.2s;
+    }
+
+    #conteudonovo {
+        padding-left: 16%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navlist a {
+        margin-left: 30px;
+        transition: 0.55s;
+    }
+
+
+}
+
+@media (max-width: 1066px) {
+    #sidebar2 p {
+        display: none;
+    }
+
+    #footer2 p {
+        display: block;
+        padding-left: 30%;
+    }
+
+    #sidebar2 img {
+        padding-left: 30%;
+    }
+
+    #conteudonovo {
+        padding-left: 14%;
+    }
+}
+
+@media (max-width: 950px) {
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #3a1d5e;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 10px 0;
+        margin-left: 0;
+    }
+    .navlist.open{
+        right: 0;
+
+    }
+    .logo{
+        padding-left: 30px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #sidebar2 img {
+        padding-left: 25%;
+    }
+
+    #conteudonovo {
+        padding-left: 10%;
+    }
+
+    #footer2 p {
+        display: block;
+        padding-left: 24%;
+    }
+}
+@media (max-width: 810px) {
+        #conteudonovo h1 {
+            text-align: left;
+            padding-right: 0;
+            width: 300px;
+        }
+
+        #conteudonovo p {
+            text-align: left;
+            width: 500px;
+            padding-right: 0;
+        }
+        #sidebar2 img {
+            padding-left: 10%;
+            height: 400px;
+        }
+        #footer2 p {
+            padding-left: 9%;
+        }
+
+        
+}
+@media (max-width: 600px){
+    #conteudonovo p {
+        width: 360px;
+    }
+    #footer2 p {
+        font-size: 20px;
+    }       
+    .logo{
+        padding-left: 50px;
+    }
+
+}
